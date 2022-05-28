@@ -50,11 +50,10 @@ with col4:
 	st.sidebar.markdown("[![Github](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJGtP-Pq0P67Ptyv3tB7Zn2ZYPIT-lPGI7AA&usqp=CAU)](https://github.com/PriyeshDave)")
 
 #creating option list for dropdown menu
-st.markdown("<h1 style='text-align: center;'>Movies Recommender System 🎥</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Movies Recommender System </h1>", unsafe_allow_html=True)
 banner = Image.open('banner_mrs.png')
 st.image(banner)
 
-st.header('Movie Recommender System')
 movies = pickle.load(open('./Models/movie_list.pkl','rb'))
 with ZipFile('./Models/similarity.zip', 'r') as zipObj:
    # Extract all the contents of zip file in current directory
@@ -70,7 +69,10 @@ selected_movie = st.selectbox(
 
 if st.button('Show Recommendation'):
 
-    st.markdown("<h3 style='text-align: left;'>You might like </h1>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center;'>YOU MIGHT LIKE </h2>", unsafe_allow_html=True)
+    st.markdown(" ", unsafe_allow_html=True)
+    st.markdown(" ", unsafe_allow_html=True)
+    st.markdown(" ", unsafe_allow_html=True)
 
     recommended_movie_names,recommended_movie_posters, recommended_movie_preference= recommend(selected_movie)
     col1, col2, col3, col4, col5 = st.columns(5)
