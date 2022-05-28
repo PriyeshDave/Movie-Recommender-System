@@ -1,10 +1,8 @@
-# Movie-Recommender-System
+# Content-Based-Movie-Recommender-System
 A content based movie recommender system using cosine similarity.
 
-# Content-Based-Movie-Recommender-System-with-sentiment-analysis-using-AJAX
-
-![Python](https://img.shields.io/badge/Python-3.8-blueviolet)
-![Framework](https://img.shields.io/badge/Framework-Flask-red)
+![Python](https://img.shields.io/badge/Python-3.9-blueviolet)
+![Framework](https://img.shields.io/badge/Framework-Streamlit-red)
 ![Frontend](https://img.shields.io/badge/Frontend-HTML/CSS/JS-green)
 ![API](https://img.shields.io/badge/API-TMDB-fcba03)
 
