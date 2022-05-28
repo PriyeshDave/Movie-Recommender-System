@@ -2,6 +2,7 @@ import pickle
 import streamlit as st
 import requests
 from PIL import Image
+from zipfile import ZipFile
 
 def fetch_poster(movie_id):
     url = "https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US".format(movie_id)
@@ -55,7 +56,11 @@ st.image(banner)
 
 st.header('Movie Recommender System')
 movies = pickle.load(open('./Models/movie_list.pkl','rb'))
-similarity = pickle.load(open('./Models/similarity.pkl','rb'))
+with ZipFile('./Models/similarity.zip', 'r') as zipObj:
+   # Extract all the contents of zip file in current directory
+   zipObj.extractall('./Models/similarity.pkl')
+
+similarity = pickle.load(open('./Models/similarity.pkl/similarity.pkl','rb'))
 
 movie_list = movies['title'].values
 selected_movie = st.selectbox(
