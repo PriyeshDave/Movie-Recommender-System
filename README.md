@@ -5,7 +5,7 @@ Content Based Recommender System recommends movies similar to the movie selected
 ![Framework](https://img.shields.io/badge/Framework-Streamlit-red)
 ![API](https://img.shields.io/badge/API-TMDB-fcba03)
 
-Link to "Movie Recommender System" application: https://share.streamlit.io/priyeshdave/movie-recommender-system/main/app.py
+> #### Link to "**Movie Recommender System**" application: https://the-movie-buff.herokuapp.com/ 
 
 ## Similarity Score : 
 
