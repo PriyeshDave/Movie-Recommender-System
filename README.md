@@ -18,7 +18,7 @@ The dataset is based on TMDB movies dataset with record of about 5000 movies.
 4. [List of movies in 2019](https://en.wikipedia.org/wiki/List_of_American_films_of_2019)
 5. [List of movies in 2020](https://en.wikipedia.org/wiki/List_of_American_films_of_2020)
 
-### :bar_chart: Exploratory Data Analysis:
+## :bar_chart: Exploratory Data Analysis:
 * Exploratory Data Analysis is the first step of understanding your data and acquiring domain knowledge. 
 
 ### :hourglass: Data Preprocessing:
@@ -31,7 +31,7 @@ The dataset is based on TMDB movies dataset with record of about 5000 movies.
 #### 2.) Vectorization:
  * I have used **Bag of Words** to tokenize the input sequences. I have used CountVectorizer for this.
 
-#### Cosine Similarity:
+#### 3.) Cosine Similarity:
  * I calculated cosine similarity among each vectors and stored them as a matrix `similarity`.
 
 ##### Similarity Score:
@@ -44,7 +44,7 @@ The dataset is based on TMDB movies dataset with record of about 5000 movies.
   ![image](https://user-images.githubusercontent.com/36665975/70401457-a7530680-1a55-11ea-9158-97d4e8515ca4.png)
   > More about Cosine Similarity : [Understanding the Math behind Cosine Similarity](https://www.machinelearningplus.com/nlp/cosine-similarity/)
 
-#### Making Recommendations:
+## Making Recommendations:
 * Based on the movie name given by user, it's similarity score is extracted from the `similarity matrix`.
 * The similarity scores are sorted in descending order and top 5 movies are selected.
 
@@ -64,7 +64,7 @@ def recommend(movie):
 ```
 
 ## Web Application :computer: :earth_americas: :
-Built a web application using **Streamlit** and deployed on **streamlit-cloud**.
+* Built a web application using **Streamlit** and deployed on **streamlit-cloud**.
 
 > #### Link to "**Movie Recommender System**" application: https://the-movie-buff.herokuapp.com/
 
