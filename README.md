@@ -1,9 +1,9 @@
 # Content-Based-Movie-Recommender-System
-Content Based Recommender System recommends movies similar to the movie selected by user and recommends movies based on cosine similarity with other movies.
-
 ![Python](https://img.shields.io/badge/Python-3.9-blueviolet)
 ![Framework](https://img.shields.io/badge/Framework-Streamlit-red)
 ![API](https://img.shields.io/badge/API-TMDB-fcba03) 
+
+Content Based Recommender System recommends movies similar to the movie selected by user and recommends movies based on cosine similarity with other movies.
  
 ## Introduction
 Developed an intelligent application that recommends user movies related to the movie selected by the them based on `Cosine Similarity` among the movies.
