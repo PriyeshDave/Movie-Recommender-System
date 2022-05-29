@@ -44,7 +44,7 @@ The dataset is based on TMDB movies dataset with record of about 5000 movies.
   ![image](https://user-images.githubusercontent.com/36665975/70401457-a7530680-1a55-11ea-9158-97d4e8515ca4.png)
   > More about Cosine Similarity : [Understanding the Math behind Cosine Similarity](https://www.machinelearningplus.com/nlp/cosine-similarity/)
 
-## Making Recommendations:
+## 🎥 Making Recommendations:
 * Based on the movie name given by user, it's similarity score is extracted from the `similarity matrix`.
 * The similarity scores are sorted in descending order and top 5 movies are selected.
 
@@ -66,5 +66,5 @@ def recommend(movie):
 ## Web Application :computer: :earth_americas: :
 * Built a web application using **Streamlit** and deployed on **streamlit-cloud**.
 
-> #### Link to "**Movie Recommender System**" application: https://the-movie-buff.herokuapp.com/
+> #### Link to "**Movie Recommender System**" application: https://share.streamlit.io/priyeshdave/movie-recommender-system/main/app.py
 
